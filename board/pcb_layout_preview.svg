@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<rect x="20" y="20" width="1560" height="960" rx="14" fill="#f8f8f8" stroke="#111" stroke-width="4"/>
+<text x="800" y="60" font-family="Arial, sans-serif" font-size="30" text-anchor="middle" font-weight="bold" fill="#111">ESP32 IRRIGATION CONTROLLER — 24 VAC REV A</text>
+<rect x="45" y="95" width="600" height="830" rx="8" fill="#eef5ff" stroke="#315d8a" stroke-width="3"/>
+<rect x="675" y="95" width="250" height="830" rx="8" fill="#f6f6f6" stroke="#555" stroke-width="3"/>
+<rect x="955" y="95" width="580" height="830" rx="8" fill="#fff5e8" stroke="#9a5a1a" stroke-width="3"/>
+<text x="345" y="130" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" font-weight="bold" fill="#111">LOW-VOLTAGE LOGIC / RS-485</text>
+<text x="800" y="130" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" font-weight="bold" fill="#111">OPTO BARRIER</text>
+<text x="1245" y="130" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" font-weight="bold" fill="#111">24 VAC VALVE FIELD SECTION</text>
+<rect x="190" y="190" width="320" height="300" rx="8" fill="#dff0df" stroke="#285b2a" stroke-width="3"/>
+<text x="350" y="230" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" font-weight="bold" fill="#111">ESP32 DEVKIT</text>
+<text x="220" y="275" font-family="Arial, sans-serif" font-size="16" text-anchor="start" font-weight="normal" fill="#111">ZONE 1: GPIO26</text>
+<text x="220" y="295" font-family="Arial, sans-serif" font-size="16" text-anchor="start" font-weight="normal" fill="#111">ZONE 2: GPIO27</text>
+<text x="220" y="315" font-family="Arial, sans-serif" font-size="16" text-anchor="start" font-weight="normal" fill="#111">ZONE 3: GPIO25</text>
+<text x="220" y="335" font-family="Arial, sans-serif" font-size="16" text-anchor="start" font-weight="normal" fill="#111">ZONE 4: GPIO33</text>
+<text x="220" y="355" font-family="Arial, sans-serif" font-size="16" text-anchor="start" font-weight="normal" fill="#111">MASTER: GPIO32</text>
+<text x="220" y="375" font-family="Arial, sans-serif" font-size="16" text-anchor="start" font-weight="normal" fill="#111">RS485 TX: GPIO17</text>
+<text x="220" y="395" font-family="Arial, sans-serif" font-size="16" text-anchor="start" font-weight="normal" fill="#111">RS485 RX: GPIO16</text>
+<text x="220" y="415" font-family="Arial, sans-serif" font-size="16" text-anchor="start" font-weight="normal" fill="#111">RS485 DE/RE: GPIO4</text>
+<text x="220" y="435" font-family="Arial, sans-serif" font-size="16" text-anchor="start" font-weight="normal" fill="#111">RAIN: GPIO34</text>
+<text x="220" y="455" font-family="Arial, sans-serif" font-size="16" text-anchor="start" font-weight="normal" fill="#111">FLOW: GPIO35</text>
+<rect x="75" y="555" width="500" height="120" rx="8" fill="#ffffff" stroke="#315d8a" stroke-width="2"/>
+<text x="325" y="585" font-family="Arial, sans-serif" font-size="21" text-anchor="middle" font-weight="bold" fill="#111">MAX3485 3.3 V RS-485</text>
+<text x="325" y="620" font-family="Arial, sans-serif" font-size="17" text-anchor="middle" font-weight="normal" fill="#111">A / B / GND / VSENS+  →  2 Modbus soil probes</text>
+<text x="325" y="648" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="normal" fill="#111">SM712 protection + optional 120 Ω termination</text>
+<rect x="75" y="700" width="235" height="130" rx="8" fill="#ffffff" stroke="#315d8a" stroke-width="2"/>
+<text x="192" y="735" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" font-weight="bold" fill="#111">RAIN INPUT</text>
+<text x="192" y="770" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#111">10k pull-up + 1k + 100nF</text>
+<text x="192" y="798" font-family="Arial, sans-serif" font-size="17" text-anchor="middle" font-weight="normal" fill="#111">GPIO34</text>
+<rect x="340" y="700" width="235" height="130" rx="8" fill="#ffffff" stroke="#315d8a" stroke-width="2"/>
+<text x="458" y="735" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" font-weight="bold" fill="#111">FLOW INPUT</text>
+<text x="458" y="770" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#111">10k pull-up + 1k + 100nF</text>
+<text x="458" y="798" font-family="Arial, sans-serif" font-size="17" text-anchor="middle" font-weight="normal" fill="#111">GPIO35</text>
+<rect x="140" y="850" width="370" height="55" rx="8" fill="#ffffff" stroke="#315d8a" stroke-width="2"/>
+<text x="325" y="885" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold" fill="#111">Separate isolated +5 V controller supply</text>
+<rect x="715" y="190" width="170" height="85" rx="8" fill="#ffffff" stroke="#555" stroke-width="2"/>
+<text x="800" y="222" font-family="Arial, sans-serif" font-size="19" text-anchor="middle" font-weight="bold" fill="#111">MOC3063M</text>
+<text x="800" y="250" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#111">ZONE 1 opto</text>
+<line x1="885" y1="232" x2="1005" y2="232" stroke="#333" stroke-width="4"/>
+<rect x="1005" y="190" width="180" height="85" rx="8" fill="#ffffff" stroke="#9a5a1a" stroke-width="2"/>
+<text x="1095" y="222" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold" fill="#111">BTA08-600SW</text>
+<text x="1095" y="250" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#111">Triac switch</text>
+<rect x="1215" y="190" width="180" height="85" rx="8" fill="#ffffff" stroke="#9a5a1a" stroke-width="2"/>
+<text x="1305" y="221" font-family="Arial, sans-serif" font-size="17" text-anchor="middle" font-weight="bold" fill="#111">100Ω + 100nF</text>
+<text x="1305" y="249" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#111">RC snubber</text>
+<line x1="1395" y1="232" x2="1495" y2="232" stroke="#333" stroke-width="4"/>
+<text x="1505" y="237" font-family="Arial, sans-serif" font-size="15" text-anchor="start" font-weight="bold" fill="#111">ZONE 1</text>
+<rect x="715" y="325" width="170" height="85" rx="8" fill="#ffffff" stroke="#555" stroke-width="2"/>
+<text x="800" y="357" font-family="Arial, sans-serif" font-size="19" text-anchor="middle" font-weight="bold" fill="#111">MOC3063M</text>
+<text x="800" y="385" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#111">ZONE 2 opto</text>
+<line x1="885" y1="367" x2="1005" y2="367" stroke="#333" stroke-width="4"/>
+<rect x="1005" y="325" width="180" height="85" rx="8" fill="#ffffff" stroke="#9a5a1a" stroke-width="2"/>
+<text x="1095" y="357" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold" fill="#111">BTA08-600SW</text>
+<text x="1095" y="385" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#111">Triac switch</text>
+<rect x="1215" y="325" width="180" height="85" rx="8" fill="#ffffff" stroke="#9a5a1a" stroke-width="2"/>
+<text x="1305" y="356" font-family="Arial, sans-serif" font-size="17" text-anchor="middle" font-weight="bold" fill="#111">100Ω + 100nF</text>
+<text x="1305" y="384" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#111">RC snubber</text>
+<line x1="1395" y1="367" x2="1495" y2="367" stroke="#333" stroke-width="4"/>
+<text x="1505" y="372" font-family="Arial, sans-serif" font-size="15" text-anchor="start" font-weight="bold" fill="#111">ZONE 2</text>
+<rect x="715" y="460" width="170" height="85" rx="8" fill="#ffffff" stroke="#555" stroke-width="2"/>
+<text x="800" y="492" font-family="Arial, sans-serif" font-size="19" text-anchor="middle" font-weight="bold" fill="#111">MOC3063M</text>
+<text x="800" y="520" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#111">ZONE 3 opto</text>
+<line x1="885" y1="502" x2="1005" y2="502" stroke="#333" stroke-width="4"/>
+<rect x="1005" y="460" width="180" height="85" rx="8" fill="#ffffff" stroke="#9a5a1a" stroke-width="2"/>
+<text x="1095" y="492" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold" fill="#111">BTA08-600SW</text>
+<text x="1095" y="520" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#111">Triac switch</text>
+<rect x="1215" y="460" width="180" height="85" rx="8" fill="#ffffff" stroke="#9a5a1a" stroke-width="2"/>
+<text x="1305" y="491" font-family="Arial, sans-serif" font-size="17" text-anchor="middle" font-weight="bold" fill="#111">100Ω + 100nF</text>
+<text x="1305" y="519" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#111">RC snubber</text>
+<line x1="1395" y1="502" x2="1495" y2="502" stroke="#333" stroke-width="4"/>
+<text x="1505" y="507" font-family="Arial, sans-serif" font-size="15" text-anchor="start" font-weight="bold" fill="#111">ZONE 3</text>
+<rect x="715" y="595" width="170" height="85" rx="8" fill="#ffffff" stroke="#555" stroke-width="2"/>
+<text x="800" y="627" font-family="Arial, sans-serif" font-size="19" text-anchor="middle" font-weight="bold" fill="#111">MOC3063M</text>
+<text x="800" y="655" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#111">ZONE 4 opto</text>
+<line x1="885" y1="637" x2="1005" y2="637" stroke="#333" stroke-width="4"/>
+<rect x="1005" y="595" width="180" height="85" rx="8" fill="#ffffff" stroke="#9a5a1a" stroke-width="2"/>
+<text x="1095" y="627" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold" fill="#111">BTA08-600SW</text>
+<text x="1095" y="655" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#111">Triac switch</text>
+<rect x="1215" y="595" width="180" height="85" rx="8" fill="#ffffff" stroke="#9a5a1a" stroke-width="2"/>
+<text x="1305" y="626" font-family="Arial, sans-serif" font-size="17" text-anchor="middle" font-weight="bold" fill="#111">100Ω + 100nF</text>
+<text x="1305" y="654" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#111">RC snubber</text>
+<line x1="1395" y1="637" x2="1495" y2="637" stroke="#333" stroke-width="4"/>
+<text x="1505" y="642" font-family="Arial, sans-serif" font-size="15" text-anchor="start" font-weight="bold" fill="#111">ZONE 4</text>
+<rect x="715" y="730" width="170" height="85" rx="8" fill="#ffffff" stroke="#555" stroke-width="2"/>
+<text x="800" y="762" font-family="Arial, sans-serif" font-size="19" text-anchor="middle" font-weight="bold" fill="#111">MOC3063M</text>
+<text x="800" y="790" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#111">MASTER opto</text>
+<line x1="885" y1="772" x2="1005" y2="772" stroke="#333" stroke-width="4"/>
+<rect x="1005" y="730" width="180" height="85" rx="8" fill="#ffffff" stroke="#9a5a1a" stroke-width="2"/>
+<text x="1095" y="762" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold" fill="#111">BTA08-600SW</text>
+<text x="1095" y="790" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#111">Triac switch</text>
+<rect x="1215" y="730" width="180" height="85" rx="8" fill="#ffffff" stroke="#9a5a1a" stroke-width="2"/>
+<text x="1305" y="761" font-family="Arial, sans-serif" font-size="17" text-anchor="middle" font-weight="bold" fill="#111">100Ω + 100nF</text>
+<text x="1305" y="789" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#111">RC snubber</text>
+<line x1="1395" y1="772" x2="1495" y2="772" stroke="#333" stroke-width="4"/>
+<text x="1505" y="777" font-family="Arial, sans-serif" font-size="15" text-anchor="start" font-weight="bold" fill="#111">MASTER</text>
+<rect x="1000" y="850" width="470" height="65" rx="8" fill="#ffffff" stroke="#9a5a1a" stroke-width="2"/>
+<text x="1235" y="875" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold" fill="#111">24 VAC INPUT → FUSE 3.15A → COM BUS</text>
+<text x="1235" y="900" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" font-weight="normal" fill="#111">SMBJ36CA across AC input</text>
+<text x="800" y="955" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold" fill="#111">Board size target: ~160 × 100 mm • 2-layer • ≥3 mm logic/24VAC copper separation</text>
+</svg>

@@ -1,0 +1,42 @@
+# Replace esp32_irrig_XXXXXXXX with the device ID printed/used by your ESP32.
+
+- alias: Irrigation - block for forecast rain
+  description: Example weather-aware block. Adapt entity IDs and thresholds to your weather integration.
+  triggers:
+    - trigger: state
+      entity_id: weather.home
+    - trigger: time_pattern
+      minutes: "/30"
+  actions:
+    - action: mqtt.publish
+      data:
+        topic: soil_irrigation/esp32_irrig_XXXXXXXX/weather_block/set
+        payload: >-
+          {% set rainy = states('weather.home') in ['rainy','pouring','lightning-rainy'] %}
+          {{ 'ON' if rainy else 'OFF' }}
+        retain: true
+
+- alias: Irrigation - notify on safety fault
+  triggers:
+    - trigger: state
+      entity_id: binary_sensor.irrigation_fault
+      to: "on"
+  actions:
+    - action: notify.notify
+      data:
+        title: Irrigation fault
+        message: Check flow, water supply, valves and pipework. ESP32 irrigation has stopped watering.
+
+- alias: Irrigation - stop watering when rain starts
+  triggers:
+    - trigger: state
+      entity_id: binary_sensor.rain_detected
+      to: "on"
+  actions:
+    - action: switch.turn_off
+      target:
+        entity_id:
+          - switch.zone_1_valve
+          - switch.zone_2_valve
+          - switch.zone_3_valve
+          - switch.zone_4_valve

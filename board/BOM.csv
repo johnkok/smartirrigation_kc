@@ -1,0 +1,27 @@
+Ref,Qty,Part,Value / suggested part,Package,Notes
+U1,1,ESP32 DevKit,ESP32-WROOM-32 DevKit,2x19 2.54mm headers,Verify exact module header spacing
+U2,1,RS485 transceiver,MAX3485ESA+ or SP3485,SOIC-8,3.3V
+U3-U7,5,Zero-cross optotriac,MOC3063M,DIP-6,Valve isolation
+Q1-Q5,5,Sensitive-gate triac,BTA08-600SW,TO-220 insulated tab,8A class; ample margin for irrigation valves
+RLED1-RLED5,5,Resistor,220R 0.25W,THT,Optotriac LED current ~9mA at 3.3V
+RG1-RG5,5,Resistor,180R 0.25W,THT,Optotriac-to-triac gate
+RGM1-RGM5,5,Resistor,10k 0.25W,THT,Gate to MT1
+RS1-RS5,5,Snubber resistor,100R 0.5W flameproof,THT,Series with CS1-CS5
+CS1-CS5,5,Snubber capacitor,100nF X2 275VAC,THT film,Across each triac with 100R
+F1,1,Fuse,3.15A slow-blow initial value,5x20mm holder,Re-size to transformer/valves
+D1,1,Bidirectional TVS,SMBJ36CA,SMB,Across 24VAC input
+D2,1,RS485 TVS,SM712,SOT-23,A/B surge protection
+RT,1,Termination resistor,120R,THT,Enable only at physical end of RS485 bus
+JP1,1,Jumper,RS485 TERM,2-pin 2.54mm,Connects 120R across A/B
+RB1-RB2,2,RS485 bias,680R,THT,Optional fail-safe bias; populate only if needed
+RIN1-RIN2,2,Input pull-up,10k,THT,Rain/flow external pull-up
+RF1-RF2,2,Input series resistor,1k,THT,GPIO input protection
+CF1-CF2,2,Input capacitor,100nF,THT/ceramic,Input filtering
+J1,1,Power terminal,+5V/GND,2-pin 5.08mm,Separate isolated 5V supply
+J2,1,Sensor terminal,A/B/GND/VSENS+,4-pin 5.08mm,VSENS+ is external DC sensor supply
+J3,1,Rain terminal,RAIN/GND/3V3,3-pin 5.08mm,Dry-contact/open-collector preferred
+J4,1,Flow terminal,FLOW/GND/3V3,3-pin 5.08mm,Open-collector Hall sensor preferred
+J5,1,24VAC input,AC1/AC2,2-pin 5.08mm,From irrigation transformer
+J6,1,Valve outputs,COM/Z1/Z2/Z3/Z4/MASTER,6-pin 5.08mm,Field wiring
+C1-C3,3,Decoupling,100nF,0805/THT,ESP32/RS485 local decoupling
+C4,1,Bulk capacitor,470uF 10V,radial,5V rail near ESP32

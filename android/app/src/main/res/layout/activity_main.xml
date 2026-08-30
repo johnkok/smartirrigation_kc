@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/baseUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ESP32 URL, e.g. http://192.168.1.70"
+            android:inputType="textUri" />
+
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Refresh status" />
+
+        <TextView
+            android:id="@+id/connectionStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Not connected"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/zone1Status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zone 1"
+            android:textSize="18sp"
+            android:paddingTop="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/valve1On"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Valve 1 ON" />
+
+            <Button
+                android:id="@+id/valve1Off"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="OFF" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/auto1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zone 1 automatic moisture control" />
+
+        <EditText
+            android:id="@+id/start1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Zone 1 start below %"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/stop1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Zone 1 stop above %"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/max1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Zone 1 max run minutes"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/sched1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Zone 1 schedule HH:MM (blank = disabled)"
+            android:inputType="time" />
+
+        <EditText
+            android:id="@+id/dur1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Zone 1 schedule duration minutes"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/zone2Status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zone 2"
+            android:textSize="18sp"
+            android:paddingTop="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/valve2On"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Valve 2 ON" />
+
+            <Button
+                android:id="@+id/valve2Off"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="OFF" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/auto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zone 2 automatic moisture control" />
+
+        <EditText
+            android:id="@+id/start2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Zone 2 start below %"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/stop2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Zone 2 stop above %"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/max2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Zone 2 max run minutes"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/sched2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Zone 2 schedule HH:MM (blank = disabled)"
+            android:inputType="time" />
+
+        <EditText
+            android:id="@+id/dur2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Zone 2 schedule duration minutes"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/saveConfig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save thresholds & schedules"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingTop="12dp"
+            android:textIsSelectable="true" />
+
+    </LinearLayout>
+</ScrollView>
