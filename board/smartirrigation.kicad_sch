@@ -4,7 +4,57 @@
 	(generator_version "9.0")
 	(uuid 87729534-18fa-44db-aaf4-ae28f98a4f99)
 	(paper "A4")
+	(title_block
+		(title "ESP32 Smart Irrigation Controller")
+		(date "2026-08-30")
+		(rev "Rev A")
+		(company "Engineering prototype")
+		(comment 1 "24 VAC valve controller with isolated triac outputs")
+		(comment 2 "Use a separate isolated 5 V supply for controller logic")
+	)
 	(lib_symbols)
+	(text "DESIGN OVERVIEW — see net_connectivity.csv and VALVE_CHANNEL.md for the electrical netlist"
+		(exclude_from_sim no)
+		(at 25.4 25.4 0)
+		(effects (font (size 1.27 1.27) (bold yes)) (justify left bottom))
+		(uuid 1d5bc6cb-ed3e-47ca-b597-f262fb017e6e)
+	)
+	(text "LOGIC: ESP32 DevKit — GPIO 26/27/25/33 drive zones 1–4; GPIO 32 drives master"
+		(exclude_from_sim no)
+		(at 25.4 38.1 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid 401d9d33-a85d-42dc-ad0d-ee312471784a)
+	)
+	(text "SENSORS: MAX3485 on GPIO 16/17/4 — RS-485 A/B to J2 — rain GPIO 34 — flow GPIO 35"
+		(exclude_from_sim no)
+		(at 25.4 45.72 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid 061672c9-b68d-4cf0-a7f5-8f3dfbf86055)
+	)
+	(text "OUTPUTS (×5): GPIO → 220R → MOC3063M → 180R gate resistor → BTA08-600SW → valve"
+		(exclude_from_sim no)
+		(at 25.4 58.42 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid 8fd70f68-a6af-46b5-b4f0-522b11d96942)
+	)
+	(text "Each triac: 10k gate-to-MT1 and 100R + 100nF X2 series snubber across MT1/MT2"
+		(exclude_from_sim no)
+		(at 25.4 66.04 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid 3723cc2f-6aac-440e-9e14-172d65b5b489)
+	)
+	(text "24 VAC: J5 AC1 → F1 → J6 COM; J5 AC2 → triac MT1 bus; SMBJ36CA across input"
+		(exclude_from_sim no)
+		(at 25.4 73.66 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid 5662a26f-faf1-470b-8dc9-e6d113632c34)
+	)
+	(text "WARNING: This sheet documents architecture only. The PCB is an unrouted placement starter, not fabrication-ready."
+		(exclude_from_sim no)
+		(at 25.4 91.44 0)
+		(effects (font (size 1.27 1.27) (bold yes)) (justify left bottom))
+		(uuid ab07ac56-ed1e-40bf-99ae-d9265770c66d)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")

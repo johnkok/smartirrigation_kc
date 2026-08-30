@@ -1,0 +1,44 @@
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Android / Gradle
+.gradle/
+**/.gradle/
+**/build/
+local.properties
+*.apk
+*.aab
+
+# PlatformIO
+.pio/
+**/.pio/
+.pioenvs/
+.piolibdeps/
+
+# KiCad local, cache, backup, and generated manufacturing files
+*-backups/
+*.kicad_prl
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.kicad_pro-bak
+*.lck
+~*.lck
+fp-info-cache
+*.gbr
+*.gbrjob
+*.drl
+*.pos
+*.rpt
+*.net
+
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
+secrets.yaml
